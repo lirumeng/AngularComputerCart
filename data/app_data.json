@@ -1,0 +1,199 @@
+[
+    {
+    	"gid":"001",
+    	"name":"小新700电竞版",
+    	"desc":"四核处理器I5-6300HQ",
+    	"price":4799,
+    	"img":"imgs/1.jpg"
+    },
+    {
+    	"gid":"002",
+        "name":"IdeaPad100S-14-NTH",
+    	"desc":"双核处理器N3060",
+    	"price":3499,
+    	"img":"imgs/2.jpg"
+    },
+    {
+    	"gid":"003",
+    	"name":"YOGA 700-14-IFI",
+    	"desc":"双核处理器i5-6200U",
+    	"price":6999,
+    	"img":"imgs/3.jpg"
+    },
+    {
+    	"gid":"004",
+        "name":"S41-75-ATE",
+        "price":4599,
+        "desc":"四核处理器A10-8700P",
+        "img":"imgs/4.jpg"
+    },
+    {
+    	"gid":"005",
+    	"name":"Flex3-14-AFO",
+    	"desc":"AMD Carrizo-L 四核处理器A4-7210",
+    	"price":3199,
+    	"img":"imgs/5.jpg"
+    },
+    {
+    	"gid":"006",
+    	"name":"天逸100-15英寸",
+    	"desc":"酷睿 Broadwell 双核处理器i5-5200U",
+    	"price":3599,
+    	"img":"imgs/6.jpg"
+    },
+    {
+    	"gid":"007",
+    	"name":"IdeaPad 300S-14ISK-ISE",
+    	"desc":"双核处理器I7-6500U",
+    	"price":4599,
+    	"img":"imgs/7.jpg"
+    },
+    {
+        "gid":"008",
+        "name":"LenovoYOGA710-14ISK-IFI",
+        "desc":"I5-6200U处理器",
+        "price":6699,
+        "img":"imgs/8.jpg"
+    },
+    {
+        "gid":"009",
+        "name":"拯救者15-ISK i7经典版",
+        "desc":"四核处理器i7-6700HQ",
+        "price":6599,
+        "img":"imgs/9.jpg"
+    },
+    {
+        "gid":"010",
+        "name":"天逸100-15英寸",
+        "desc":"双核处理器i5-5200U 2.2GHZ",
+        "price":3299,
+        "img":"imgs/10.jpg"
+    },
+    {
+        "gid":"011",
+        "name":"天逸100-15英寸",
+        "desc":"酷睿 Broadwell 双核处理器i5-5200U ",
+        "price":3599,
+        "img":"imgs/11.jpg"
+    },
+    {
+        "gid":"012",
+        "name":"S41-75-ATE(雅典黑)",
+        "desc":"四核处理器A10-8700P",
+        "price":4599,
+        "img":"imgs/12.jpg"
+    },
+    {
+        "gid":"013",
+        "name":"拯救者15-ISK i5极速版",
+        "desc":"四核处理器i5-6300HQ",
+        "price":5799,
+        "img":"imgs/13.jpg"
+    },
+    {
+        "gid":"014",
+        "name":"YOGA 700-11-6Y30(皓月银)",
+        "desc":"双核处理器6Y30",
+        "price":4999,
+        "img":"imgs/14.jpg"
+    },
+    {
+        "gid":"015",
+        "name":"YOGA 3 Pro-5Y71(皓月银)",
+        "desc":"双核处理器5Y714GB内存 /256G ",
+        "price":6949,
+        "img":"imgs/15.jpg"
+    },
+    {
+        "gid":"016",
+        "name":"YOGA 4 Pro(YOGA 900)-13-ISE(金色)",
+        "desc":"双核处理器I7-6500U",
+        "price":11999,
+        "img":"imgs/16.jpg"
+    },
+    {
+        "gid":"017",
+        "name":"天逸100-14英寸(i5 2G独显 无光驱)",
+        "desc":"酷睿 Broadwell双核处理器i5-5200U ",
+        "price":3599,
+        "img":"imgs/17.jpg"
+    },
+    {
+        "gid":"018",
+        "name":"S41-75-ATE(蔷薇红)",
+        "desc":"四核处理器A10-8700P",
+        "price":4599,
+        "img":"imgs/18.jpg"
+    },
+    {
+        "gid":"019",
+        "name":"IdeaPad 300S-14ISK-IFI(银色)",
+        "desc":"双核处理器I5-6200U",
+        "price":4599,
+        "img":"imgs/19.jpg"
+    },
+    {
+        "gid":"020",
+        "name":"天逸100-15英寸(i5 8G 2G独显 DVD)",
+        "desc":"酷睿 Broadwell 双核处理器i5-5200U",
+        "price":3699,
+        "img":"imgs/20.jpg"
+    },
+    {
+        "gid":"021",
+        "name":"S41-75-ATE(星光银)",
+        "desc":"四核处理器A10-8700P",
+        "price":4599,
+        "img":"imgs/21.jpg"
+    },
+    {
+        "gid":"022",
+        "name":"S41-35SIC-AFO(烈焰红)(IA)",
+        "desc":"A4-7210 四核处理器",
+        "price":3099,
+        "img":"imgs/22.jpg"
+    },
+    {
+        "gid":"023",
+        "name":"YOGA 700-14-IFI(皓月银)",
+        "desc":"双核处理器i5-6200U",
+        "price":6999,
+        "img":"imgs/23.jpg"
+    },
+    {
+        "gid":"024",
+        "name":"YOGA 4 Pro(YOGA 900)-13-IFI(金色)(L)",
+        "desc":"双核处理器i5-6200U",
+        "price":7999,
+        "img":"imgs/24.jpg"
+    },
+    {
+        "gid":"025",
+        "name":"小新700电竞版(#FFFFFF)GTX950M-4G/i5/8G/1T)",
+        "desc":"四核处理器I5-6300HQ",
+        "price":5199,
+        "img":"imgs/25.jpg"
+    },
+    {
+        "gid":"026",
+        "name":"IdeaPad100S-14-NTH(IB)银色)",
+        "desc":"双核处理器N3150",
+        "price":3799,
+        "img":"imgs/26.jpg"
+    },
+    {
+        "gid":"027",
+        "name":"天逸100-14英寸(i3 2G独显 无光驱)",
+        "desc":"双核处理器i5-6200U",
+        "price":7999,
+        "img":"imgs/27.jpg"
+    },
+    {
+        "gid":"028",
+        "name":"小新Air 13-i7-金",
+        "desc":"I7-6500U处理器",
+        "price":6999,
+        "img":"imgs/28.jpg"
+    }
+]
+

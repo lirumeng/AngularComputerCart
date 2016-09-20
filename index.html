@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cartApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,max-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="" href="css/normalize.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>电脑在线</title>
+</head>
+<body>
+
+<div class="header-bottom mt50">
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-default c3 mb0 bb0">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-bottom" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="header-bottom">
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group relative">
+                                <input type="text" class="form-control form-bgc pr30" placeholder="搜索">
+                                <span class="nav-search"><a href="#"><i class="glyphicon glyphicon-search"></i></a></span>
+                            </div>  
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>  
+    </div>  
+</div>
+
+<div class="container" ng-controller="cartCtrl">
+    <div class="row clearfix">
+        <div class="hidden-sm hidden-xs">
+            <div class="carousel slide" id="carousel-107333">
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#carousel-107333">
+                    </li>
+                    <li data-slide-to="1" data-target="#carousel-107333">
+                    </li>
+                    <li data-slide-to="2" data-target="#carousel-107333">
+                    </li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active w100">
+                        <img alt="" src="imgs/banner1.jpg" />
+                    </div>
+                </div> 
+                <div class="carousel-inner" ng-repeat="item in imgs">
+                    <div class="item w100">
+                        <img alt="" src="{{item.img}}" />
+                    </div>
+                </div> 
+                <a class="left carousel-control" href="#carousel-107333" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-107333" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 每一个商品信息 -->
+    <div class="row clearfix mt20">
+        <div class="col-md-12 column">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12" ng-repeat="good in goods">
+                    <div class="thumbnail">
+                        <img alt="300x200" src="{{good.img}}" />
+                        <div class="caption">
+                            <h3 class="h3-style">
+                                {{good.name}}
+                            </h3>
+                            <p class="desc">
+                                {{good.desc}}
+                            </p>
+                            <p><span class="c1">￥</span><span class="c2">{{good.price}}</span><span class="glyphicon glyphicon-heart ml30 heart-style"></span></p>
+                            <p class="text-right">
+                                 <a class="btn btn-block btn-success" ng-click="buy($index)">加入购物车</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 购物车展示 -->
+        <div class="col-sm-4 col-xs-4 column position-fixed w300 pl0">
+            <div class="panel-group mb0" id="panel-608110">
+                <div class="panel panel-default bordernone">
+                    <div class="panel-heading bgc pos-re1">
+                         <a class="panel-title" data-toggle="collapse" data-parent="#panel-608110" href="#panel-element-413823">
+                            <span class="glyphicon glyphicon-shopping-cart cart"></span><span class="badge badge1 pos-ab1">{{tnum}}</span>
+                         </a>
+                    </div>
+                    <div id="panel-element-413823" class="panel-collapse in h300 overfscroll">
+                        <div class="panel-body" ng-repeat="(key,value) in cart">
+                            <div class="media">
+                                <a href="#" class="pull-left" style="width:100%;"><img style="width:80%;" src="{{value.img}}" class="media-object" alt='' /></a>
+                                <div class="media-body">
+                                    <h4 class="media-heading h4-font">
+                                        {{value.name}}
+                                    </h4> 
+                                    <p class="desc">
+                                        {{value.desc}}
+                                    </p>
+                                    <p>
+                                        <span>小计:￥</span><span class="c2">{{value.price*value.num}}</span>
+                                    </p>
+                                    <p class="text-center">
+                                        <button class="btn btn-default jian" ng-click="jian(key)" style="m;">-</button>
+                                        <input class="input-style" type="text" ng-model="value.num">
+                                        <button class="btn btn-default" ng-click="jia(key)">+</button>
+                                    </p>
+                                    <p class="text-center">
+                                        <button class="btn btn-link" id="del-btn" ng-click="del(key)">删除</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <button type="button" class="btn btn-block btn-success" ng-click="settle()">结算:{{total|currency:'￥'}}</button>
+            <button class="btn btn-block btn-danger mt0" ng-click="delAll()">清空购物车</button>
+        </div>
+    </div>
+    <div class="row text-center">
+        <a class="btn btn-link loadmore" ng-click="loadmore()">{{more}}</a>
+    </div>
+    <div class="tips-btn pos-re2">
+        <span class="glyphicon glyphicon-shopping-cart"><span class="badge pos-ab2 badge2">{{tnum}}</span></span>
+    </div>
+    <div class="row clearfix xssmnone mt30">
+        <div class="col-md-12 column">
+            <p class="text-danger text-center">
+                <em>Copyright</em> 我的购物车版权信息 <strong>公安备案</strong> 豫 <small>Github</small> 社区。
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container none fixedbottom w100" >
+    <div class="row clearfix">
+        <div class="col-sm-4 col-xs-4 column p0">
+             <button type="button" class="btn btn-default btn-block btn-success btn-lg no-radius" id="showcart">购物车</button>
+        </div>
+        <div class="col-sm-4 col-xs-4 column p0">
+             <button type="button" class="btn btn-default btn-block btn-success btn-lg no-radius">店铺</button>
+        </div>
+        <div class="col-sm-4 col-xs-4 column p0">
+             <button type="button" class="btn btn-default btn-block btn-success btn-lg no-radius">订单</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-http.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

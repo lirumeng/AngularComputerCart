@@ -1,0 +1,21 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "css/bootstrap.min.css",
+      "css/normalize.css",
+      "css/layout.css",
+      "css/responsive.css",
+      "js/jquery.min.js",
+      "js/bootstrap.min.js",
+      "js/angular.min.js",
+      "js/angular-http.js",
+      "data/app_data.json",
+      "data/app_data_img.json",
+      "js/script.js",
+      "imgs/banner1.jpg"
+    ],
+    "refer": [],
+    "priority": 0
+  }
+}

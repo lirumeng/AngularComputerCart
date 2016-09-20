@@ -1,0 +1,47 @@
+body {
+	padding-bottom: 8%;
+}
+@media (min-width: 992px) { 
+	.none {
+		display: none;
+	}
+	.tips-btn {
+		display: block;
+	}
+	.position-fixed {
+	    right: -300px;
+	    top: 0px;
+	}
+}
+
+@media (max-width: 992px) {
+	.none {
+		display: block;
+	}
+	.tips-btn {
+		display: none;
+	}
+	.position-fixed {
+	    left: 0px;
+	    // bottom: -500px;
+	    bottom: 45px;
+	    display: none;
+	}
+	.mt50 {
+		margin-top: 0;
+	}
+	.xssmnone {
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	.none {
+		display: block;
+	}
+	.tips-btn {
+		display: none;
+	}
+	.w300 {
+		width: 60%;
+	}
+}
